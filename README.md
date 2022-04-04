@@ -25,3 +25,5 @@ It's about 500 lines of TypeScript and mostly respects the reddit ratelimits aft
 
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+![A big mess of pixels, mostly looking like noise with the occasional artwork or flag](ovw.png)
