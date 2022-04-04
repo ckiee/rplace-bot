@@ -56,8 +56,7 @@ async function main() {
 
         console.log(`We have ${pixels.length} to place (:`);
 
-        let pixel;
-        while (pixel = pixels.pop()) {
+        await Promise.allSettled(pixels.map(async pixel => {
             let placed = false;
             inner:
             while (!placed) {
@@ -74,7 +73,7 @@ async function main() {
                 }
             }
             console.log(`Placed @ (${pixel.x},${pixel.y})`);
-        }
+        }));
     }
 }
 
